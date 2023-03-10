@@ -1,6 +1,6 @@
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { Pattern } from '@/components/Pattern'
+import { Button } from './Button'
+import { Container } from './Container'
+import { Pattern } from './Pattern'
 
 export function FreeChapters() {
   return (
@@ -45,6 +45,7 @@ export function FreeChapters() {
                 type="submit"
                 color="white"
                 className="mt-4 w-full sm:relative sm:z-10 sm:mt-0 sm:w-auto sm:flex-none"
+                href={undefined}
               >
                 Get free chapters
               </Button>

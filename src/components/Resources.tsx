@@ -1,11 +1,11 @@
 import Image from 'next/image'
 
-import { Container } from '@/components/Container'
-import { SectionHeading } from '@/components/SectionHeading'
-import abstractBackgroundImage from '@/images/resources/abstract-background.png'
-import discordImage from '@/images/resources/discord.svg'
-import figmaImage from '@/images/resources/figma.svg'
-import videoPlayerImage from '@/images/resources/video-player.svg'
+import { Container } from './Container'
+import { SectionHeading } from './SectionHeading'
+import abstractBackgroundImage from '../images/resources/abstract-background.png'
+import discordImage from '../images/resources/discord.svg'
+import figmaImage from '../images/resources/figma.svg'
+import videoPlayerImage from '../images/resources/video-player.svg'
 
 const resources = [
   {
@@ -64,8 +64,8 @@ export function Resources() {
       aria-labelledby="resources-title"
       className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
-      <Container>
-        <SectionHeading number="3" id="resources-title">
+      <Container className={undefined}>
+        <SectionHeading number="3" id="resources-title" className={undefined}>
           Resources
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">

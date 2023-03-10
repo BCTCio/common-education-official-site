@@ -1,11 +1,11 @@
 import Image from 'next/image'
 
-import { Container } from '@/components/Container'
-import { SectionHeading } from '@/components/SectionHeading'
-import duotoneImage from '@/images/screencasts/duotone.svg'
-import gridsImage from '@/images/screencasts/grids.svg'
-import setupImage from '@/images/screencasts/setup.svg'
-import strokesImage from '@/images/screencasts/strokes.svg'
+import { Container } from './Container'
+import { SectionHeading } from './SectionHeading'
+import duotoneImage from '../images/screencasts/duotone.svg'
+import gridsImage from '../images/screencasts/grids.svg'
+import setupImage from '../images/screencasts/setup.svg'
+import strokesImage from '../images/screencasts/strokes.svg'
 
 const videos = [
   {
@@ -61,8 +61,8 @@ export function Screencasts() {
       aria-labelledby="screencasts-title"
       className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
-      <Container>
-        <SectionHeading number="2" id="screencasts-title">
+      <Container className={undefined}>
+        <SectionHeading number="2" id="screencasts-title" className={undefined}>
           Screencasts
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
