@@ -27,11 +27,11 @@ type ButtonProps = {
   color: string
   className?: string
   href?: string
-  children: any
+  children?: React.ReactNode
   type?: string
 }
 export const Button: React.FC<ButtonProps> = (
-  { variant = 'solid', color = 'slate', className, href },
+  { variant = 'solid', color = 'slate', className, href, children },
   ...props
 ) => {
   className = clsx(
@@ -41,8 +41,12 @@ export const Button: React.FC<ButtonProps> = (
   )
 
   return href ? (
-    <Link href={href} className={className} {...props} />
+    <Link href={href} className={className} {...props}>
+      {children}
+    </Link>
   ) : (
-    <button className={className} {...props} />
+    <button className={className} {...props}>
+      {children}
+    </button>
   )
 }

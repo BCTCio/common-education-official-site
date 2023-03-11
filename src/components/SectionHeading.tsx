@@ -1,6 +1,15 @@
 import clsx from 'clsx'
-
-export function SectionHeading({ number, children, className, ...props }) {
+import React from 'react'
+type SectionHeadingProps = {
+  number: { [key: string]: any } | string
+  children: React.ReactNode
+  className?: string
+  id: string | number
+}
+export const SectionHeading: React.FC<SectionHeadingProps> = (
+  { number, children, className },
+  ...props
+) => {
   return (
     <h2
       className={clsx(

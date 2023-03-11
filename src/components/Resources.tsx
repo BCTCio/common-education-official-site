@@ -64,8 +64,8 @@ export function Resources() {
       aria-labelledby="resources-title"
       className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
-      <Container className={undefined}>
-        <SectionHeading number="3" id="resources-title" className={undefined}>
+      <Container>
+        <SectionHeading number="3" id="resources-title">
           Resources
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">

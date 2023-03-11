@@ -59,10 +59,10 @@ export function Hero() {
               One World
             </p>
             <div className="mt-8 flex gap-4">
-              <Button href="#free-chapters" color="blue" className={undefined}>
+              <Button href="#free-chapters" color="blue">
                 Read our story
               </Button>
-              <Button href="#pricing" variant="outline" color="blue" className={undefined}>
+              <Button href="#pricing" variant="outline" color="blue">
                 Donate today
               </Button>
             </div>
