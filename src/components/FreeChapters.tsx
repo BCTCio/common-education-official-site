@@ -1,6 +1,6 @@
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { Pattern } from '@/components/Pattern'
+import { Button } from './Button'
+import { Container } from './Container'
+import { Pattern } from './Pattern'
 
 export function FreeChapters() {
   return (

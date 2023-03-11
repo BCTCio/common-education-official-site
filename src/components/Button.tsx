@@ -22,14 +22,18 @@ const variantStyles = {
     blue: 'border-blue-300 text-blue-600 hover:border-blue-400 hover:bg-blue-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 active:text-blue-600/70 disabled:opacity-40 disabled:hover:border-blue-300 disabled:hover:bg-transparent',
   },
 }
-
-export function Button({
-  variant = 'solid',
-  color = 'slate',
-  className,
-  href,
+type ButtonProps = {
+  variant?: string
+  color: string
+  className?: string
+  href?: string
+  children?: React.ReactNode
+  type?: string
+}
+export const Button: React.FC<ButtonProps> = (
+  { variant = 'solid', color = 'slate', className, href, children },
   ...props
-}) {
+) => {
   className = clsx(
     baseStyles[variant],
     variantStyles[variant][color],
@@ -37,8 +41,12 @@ export function Button({
   )
 
   return href ? (
-    <Link href={href} className={className} {...props} />
+    <Link href={href} className={className} {...props}>
+      {children}
+    </Link>
   ) : (
-    <button className={className} {...props} />
+    <button className={className} {...props}>
+      {children}
+    </button>
   )
 }

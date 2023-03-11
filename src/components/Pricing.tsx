@@ -1,12 +1,26 @@
 import clsx from 'clsx'
 
-import { Button } from '@/components/Button'
-import { CheckIcon } from '@/components/CheckIcon'
-import { Container } from '@/components/Container'
-import { GridPattern } from '@/components/GridPattern'
-import { SectionHeading } from '@/components/SectionHeading'
-
-function Plan({ name, description, price, features, href, featured }) {
+import { Button } from './Button'
+import { CheckIcon } from './CheckIcon'
+import { Container } from './Container'
+import { GridPattern } from './GridPattern'
+import { SectionHeading } from './SectionHeading'
+type PlanProps = {
+  name: string
+  description: string
+  price: string | number
+  features?: any
+  href?: string
+  featured?: any
+}
+const Plan: React.FC<PlanProps> = ({
+  name,
+  description,
+  price,
+  features,
+  href,
+  featured,
+}) => {
   return (
     <div
       className={clsx(
