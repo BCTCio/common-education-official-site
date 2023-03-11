@@ -45,7 +45,6 @@ export function FreeChapters() {
                 type="submit"
                 color="white"
                 className="mt-4 w-full sm:relative sm:z-10 sm:mt-0 sm:w-auto sm:flex-none"
-                href={undefined}
               >
                 Get free chapters
               </Button>
