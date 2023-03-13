@@ -27,7 +27,7 @@ export function Expandable({ children }) {
     <ExpandableContext.Provider
       value={{
         isExpanded,
-        expand: () => {
+        setIsExpanded: () => {
           setIsExpanded(true)
         },
       }}
@@ -38,7 +38,7 @@ export function Expandable({ children }) {
 }
 
 Expandable.Button = function Button({ children }) {
-  let { isExpanded, expand } = useContext(ExpandableContext)
+  let { isExpanded, setIsExpanded } = useContext(ExpandableContext)
 
   return (
     !isExpanded && (
@@ -46,7 +46,7 @@ Expandable.Button = function Button({ children }) {
         <button
           type="button"
           className="flex items-center text-base font-medium tracking-tight text-slate-900 hover:text-slate-700"
-          onClick={expand}
+          onClick={setIsExpanded}
         >
           {children}
           <ArrowDownIcon className="ml-2 h-6 w-6" />
