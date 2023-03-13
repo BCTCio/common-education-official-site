@@ -7,7 +7,7 @@ steps:
   image: node:16
   commands:
   - npm install
-  - npm build
+  - npm run build
   when:
     event:
     - push
@@ -18,7 +18,7 @@ steps:
   image: node:16
   commands:
     - npm install
-    - npm deploy
+    - npm run deploy
   environment:
     AWS_ACCESS_KEY_ID:
       from_secret: AWS_ID
