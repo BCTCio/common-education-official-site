@@ -7,12 +7,12 @@ import coverImage from '../images/cover.jpeg'
 
 function Testimonial() {
   return (
-    <figure className="relative mx-auto max-w-md text-center lg:mx-0 lg:text-left">
+    <figure className="relative max-w-md mx-auto text-center lg:mx-0 lg:text-left">
       <div className="flex justify-center text-blue-600 lg:justify-start">
         <StarRating />
       </div>
       <blockquote className="mt-2">
-        <p className="font-display text-xl font-medium text-slate-900">
+        <p className="text-xl font-medium font-display text-slate-900">
           Common Education Foundation - Empowering Education for All
         </p>
       </blockquote>
@@ -38,27 +38,22 @@ export function Hero() {
               patternTransform="translate(112 64)"
             />
           </div>
-          <div className="relative z-10 mx-auto flex w-64 rounded-xl bg-slate-600 shadow-xl md:w-80 lg:w-full">
+          <div className="relative z-10 flex w-64 mx-auto shadow-xl rounded-xl bg-slate-600 md:w-80 lg:w-full">
             <Image className="w-full" src={coverImage} alt="" priority />
           </div>
         </div>
-        <div className="relative px-4 sm:px-6 lg:col-span-7 lg:pr-0 lg:pb-14 lg:pl-16 xl:pl-20">
-          <div className="hidden lg:absolute lg:bottom-0 lg:-top-32 lg:right-[-100vw] lg:left-[-100vw] lg:block lg:bg-slate-100" />
-          <Testimonial />
-        </div>
-        <div className="bg-white pt-16 lg:col-span-7 lg:bg-transparent lg:pt-0 lg:pl-16 xl:pl-20">
-          <div className="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
-            <h1 className="font-display text-5xl font-extrabold text-slate-900 sm:text-6xl">
+        <div className="pt-16 bg-white lg:col-span-7 lg:bg-transparent lg:pt-0 lg:pl-16 xl:pl-20">
+          <div className="px-4 mx-auto sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
+            <h1 className="text-5xl font-extrabold font-display text-slate-900 sm:text-6xl">
               <span className="text-blue-600 underline-offset-8">
                 Common Education
               </span>{' '}
               Foundation
             </h1>
             <p className="mt-4 text-3xl text-slate-600">
-              Empowering Education for All, One Child at a Time, One Community,
-              One World
+              Bridging the Education Gap, One Child at a Time
             </p>
-            <div className="mt-8 flex gap-4">
+            <div className="flex gap-4 mt-8">
               <Button href="#free-chapters" color="blue">
                 Read our story
               </Button>

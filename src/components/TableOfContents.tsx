@@ -33,20 +33,20 @@ export function TableOfContents() {
     <section
       id="table-of-contents"
       aria-labelledby="table-of-contents-title"
-      className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
+      className="py-16 scroll-mt-14 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
         <SectionHeading number="1" id="table-of-contents-title">
           Our Mission
         </SectionHeading>
-        <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Get a look at all of the content covered in the book. Everything you
-          need to know is inside.
+        <p className="mt-8 text-4xl font-bold tracking-tight font-display text-slate-900">
+          Elevating Hope, Igniting Potential: Unleashing the Promise of
+          Underprivileged Children
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          “Everything Starts as a Square” is comprised of 240 tightly edited,
-          highly visual pages designed to teach you everything you need to know
-          about icon design with no unnecessary filler.
+          Transforming Lives and Communities: Empowering Young Minds in Rural
+          China to Overcome Poverty Through Comprehensive Access to Quality
+          Education and Support Services
         </p>
         <Expandable>
           {({ isExpanded }) => (
@@ -56,12 +56,12 @@ export function TableOfContents() {
                   .slice(0, isExpanded ? undefined : 2)
                   .map(([title, pages]) => (
                     <li key={title}>
-                      <h3 className="font-display text-3xl font-bold tracking-tight text-slate-900">
+                      <h3 className="text-3xl font-bold tracking-tight font-display text-slate-900">
                         {title}
                       </h3>
                       <ol
                         role="list"
-                        className="mt-8 divide-y divide-slate-300/30 rounded-2xl bg-slate-50 px-6 py-3 text-base tracking-tight sm:py-7 sm:px-8"
+                        className="px-6 py-3 mt-8 text-base tracking-tight divide-y divide-slate-300/30 rounded-2xl bg-slate-50 sm:py-7 sm:px-8"
                       >
                         {Object.entries(pages).map(([title, pageNumber]) => (
                           <li
